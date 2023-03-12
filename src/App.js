@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>Albert Ganteng</div>
+        <div>Albert jelek</div>
       </header>
     </div>
   );
