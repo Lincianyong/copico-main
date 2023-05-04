@@ -1,8 +1,23 @@
 import React from 'react';
 import Logo1 from './assets/LOGOJUWHITE.png';
-import Logo2 from './assets/LOGOJUGRAYFIT.png'
+import Logo2 from './assets/LOGOJUGRAYFIT.png';
+import { useState } from "react";
+import { db } from './firebase-config';
+import { collection, getDocs } from "firebase/firestore";
 
 function Body() {
+        const [events, setEvents] = useState([]);
+        const eventsCollectionRef = collection(db, "event");
+
+        const getEvents = async () => {
+            const data = await getDocs(eventsCollectionRef);
+            console.log(data.docs);
+            setEvents(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+        };
+
+        getEvents(); // fetch data when the component is rendered
+
+        console.log(events);
     return (
         <section>
             <div className='w-screen py--2 bg-black rounded-t-[2rem] flex justify-center content-center'>
@@ -18,9 +33,25 @@ function Body() {
 
                 <p className='font-atyp text-[1.7rem] ml-[4vh]'>UP COMING EVENTS</p>
 
+                {events.map((event) => (
+                    <div className='flex' key={event.id}>
+                        {/* Tanggal */}
+                        <div className='text-[4rsem]'>
+                            {event.date}
+                        </div>
+                        <div className='m-[5vh] h-15 border-l-[0.1rem] border-white'></div>
+                        {/* Description */}
+                        <div className=''>
+                            <p>{event.name}</p>
+                            <p>{event.location}</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                        </div>
+
+                    </div>
+                ))}
+
                 {/* Months */}
                 <div>
-
                     {/* Events */}
                     <div className='flex'>
                         {/* Tanggal */}

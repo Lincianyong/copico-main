@@ -2,10 +2,8 @@ import './App.css';
 import React from 'react';
 import Header from './components/Header';
 import Body from './components/Body';
-
 import { useState } from "react";
-import './App.css';
-import { db } from './firebase-config';
+import { db } from './components/firebase-config';
 import { collection, getDocs } from "firebase/firestore";
 
 function App() {
@@ -37,17 +35,3 @@ function App() {
 }
 
 export default App;
-
-    // <div className="App">
-    //   {events.map((event) => {
-    //   return( 
-    //     <div>
-    //       {" "}
-    //       <h1>Name: {event.name}</h1>
-    //       <h1>Date: {event.date}</h1>
-    //       <h1>Location: {event.location}</h1>
-        
-    //    </div>
-    //   );
-    // })}
-    // </div>
