@@ -11,6 +11,8 @@ root.render(
   </React.StrictMode>
 );
 
+reportWebVitals();
+
 ReactDOM.render(
   <App />,
   document.getElementById('root')

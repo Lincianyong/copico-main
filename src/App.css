@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+/* Flip on the X axis */
+.flip-horizontal {
+  --transform-scale-x: -1;
+}
+
+/* Flip on the Y axis */
+.flip-vertical {
+  --transform-scale-y: -1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +45,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Ade';
+  src: url('./components/assets/Ade-Display.otf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./components/assets/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Atyp';
+  src: url('./components/assets/AtypText-Medium.eot')
 }
