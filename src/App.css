@@ -47,10 +47,13 @@
   }
 }
 
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+=======
+>>>>>>> 16a40c830bd796d9f90da6241fc3dbc8a7e116ea
 @font-face {
   font-family: 'Ade';
   src: url('./components/assets/Ade-Display.otf');
