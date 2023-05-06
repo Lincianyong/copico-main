@@ -37,7 +37,8 @@ function Body() {
                     <div className='flex' key={event.id}>
                         {/* Tanggal */}
                         <div className='text-[4rsem]'>
-                            {event.date}
+                            {/* {event.date} */}
+                            25
                         </div>
                         <div className='m-[5vh] h-15 border-l-[0.1rem] border-white'></div>
                         {/* Description */}
@@ -50,25 +51,6 @@ function Body() {
                     </div>
                 ))}
 
-                {/* Months */}
-                <div>
-                    {/* Events */}
-                    <div className='flex'>
-                        {/* Tanggal */}
-                        <div className='text-[4rem]'>
-                            25
-                        </div>
-                        <div className='m-[5vh] h-15 border-l-[0.1rem] border-white'></div>
-                        {/* Description */}
-                        <div className=''>
-                            <p>Arya's Party</p>
-                            <p>W. 10, Manggung, Caturtunggal</p>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
             <div className='w-screen h-auto bg-black px-4 py-6'>
                 <div>
