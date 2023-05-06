@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Ade';
+  src: url('./components/assets/Ade-Display.otf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./components/assets/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Atyp';
+  src: url('./components/assets/AtypText-Medium.eot')
+}

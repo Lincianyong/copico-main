@@ -18,7 +18,8 @@ function Body() {
         getEvents(); // fetch data when the component is rendered
 
         console.log(events);
-    return (
+    
+        return (
         <section>
             <div className='w-screen py--2 bg-black rounded-t-[2rem] flex justify-center content-center'>
                 <div>
@@ -36,7 +37,7 @@ function Body() {
                 {events.map((event) => (
                     <div className='flex' key={event.id}>
                         {/* Tanggal */}
-                        <div className='text-[4rsem]'>
+                        <div className='text-[5rsem]'>
                             {/* {event.date} */}
                             25
                         </div>
