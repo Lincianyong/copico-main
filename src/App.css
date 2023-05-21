@@ -47,13 +47,10 @@
   }
 }
 
-<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-=======
->>>>>>> 16a40c830bd796d9f90da6241fc3dbc8a7e116ea
 @font-face {
   font-family: 'Ade';
   src: url('./components/assets/Ade-Display.otf');
@@ -67,4 +64,22 @@
 @font-face {
   font-family: 'Atyp';
   src: url('./components/assets/AtypText-Medium.eot')
+}
+
+@font-face {
+  font-family: 'Atyp';
+  src: url('./components/assets/AtypText-Medium.ttf');
+  font-weight: medium; /* or 'medium' depending on the font file */
+}
+
+@font-face {
+  font-family: 'Atyp';
+  src: url('./components/assets/AtypText-Semibold.ttf');
+  font-weight: semibold; /* or 'semibold' depending on the font file */
+}
+
+@font-face {
+  font-family: 'Atyp';
+  src: url('./components/assets/AtypText-Regular.ttf');
+  font-weight: normal;
 }
